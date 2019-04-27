@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {background: #eee;}
+
+.success {color: green;}
+.info {color: dodgerblue;}
+.warning {color: orange;}
+.danger {color: red;}
+.default {color: black;}
+</style>
+</head>
+<body> 
+
+<h2>Operation</h2>
+
+<button class="btn success">GET</button>
+<button class="btn info"><a href="#log2">POST </a></button>
+<button class="btn warning"><a href="#log3">PUT </a></button>
+<button class="btn danger"><a href="#log2">DELETE </a></button>
+
+
+             <div id ="log2">
+	<form action="index.php" method="post" name="form1">
+		<table width="25%" border="0">
+			<tr> 
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr> 
+				<td>Age</td>
+				<td><input type="text" name="age"></td>
+			</tr>
+			<tr> 
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Done"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	<div id ="log3">
+	<form action="index.php" method="post" name="form1">
+		<table width="25%" border="0">
+			<tr> 
+				<td>Name</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr> 
+				<td>Age</td>
+				<td><input type="text" name="age"></td>
+			</tr>
+			<tr> 
+				<td>Email</td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Done"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+
+	<div id ="log2">
+	<form action="index.php" method="post" name="form1">
+		<table width="25%" border="0">
+			<tr> 
+				<td>ID</td>
+				<td><input type="text" name="name"></td>
+			</tr>
+			 
+			<tr> 
+				<td></td>
+				<td><input type="submit" name="Submit" value="Done"></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+
+</body>
